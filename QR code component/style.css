@@ -1,0 +1,70 @@
+:root{
+    --White: hsl(0, 0%, 100%)
+
+--Slate 300: hsl(212, 45%, 89%)
+--Slate 500: hsl(216, 15%, 48%)
+--Slate 900: hsl(218, 44%, 22%)
+}
+
+body{
+    background: hsl(212, 45%, 89%);
+    Font: size 15px; 
+}
+
+@media only screen  {
+    .item-qr{
+        
+        
+        position: absolute;
+        top: 50%;
+        left: 46%;
+        transform: translate(-50%, -46%);
+        text-align: center;
+    }
+    .colum-qr{
+        border:hsl(216, 15%, 48%)  2px;
+        background-color: hsl(0, 0%, 100%);
+        Font-size: 15px;
+        width: 203px;
+        height: 345px;
+        border-radius: 12px;
+        padding:5%; 
+    }
+}
+.colum-qr{
+    border:hsl(216, 15%, 48%)  2px;
+    background-color: hsl(0, 0%, 100%);
+    Font-size: 15px;
+    width: 203px;
+    height: 345px;
+    border-radius: 12px;
+    padding:5%; 
+}
+
+.imag{
+    
+    width: 200px;
+    height: 200px;
+    border-radius: 5%;
+    padding: 1%;
+}
+span{
+    
+    padding-top: 4%;
+    padding-left: 3%;
+    padding-bottom: 11%;
+    text-align: center;
+    font-family: Outfit;
+    font-size: 12px;
+    
+    color: hsl(216, 15%, 48%) ;
+}
+h1{
+    font-size: 15px;
+    padding-top: 6%;
+    
+    padding-left: 7%;
+    padding-right: 7%;
+    font-family: Outfit;
+    color: hsl(0, 2%, 20%) ;   
+}
