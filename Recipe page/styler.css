@@ -1,0 +1,622 @@
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Stone-100: hsl(30, 54%, 90%);
+    --Stone-150: hsl(30, 18%, 87%);
+    --Stone-600: hsl(30, 10%, 34%);
+    --Stone-900: hsl(24, 5%, 18%);
+    --Brown-800: hsl(14, 45%, 36%);
+    --Rose-800: hsl(332, 51%, 32%);
+    --Rose-50: hsl(330, 100%, 98%);
+}
+@media only screen and (min-width: 1024px){
+    
+    body{
+        background-color: var(--Stone-100);
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            padding-top: 10%;
+            padding-bottom: 10%;
+        
+        
+    }
+
+    .container{
+        text-align: left;
+        border-radius: 10px;
+        background-color:var(--White);
+        margin-left: 23%;
+        
+        margin-right: 23%;
+        
+
+    }
+    .head-1{
+        padding-left: 30px;
+        margin-top: 30px;
+
+    }
+    .head-h1{
+        font-family: Young Serif;
+        font-weight: 800;
+        font-size: 32px;
+        
+    }
+    .head-p{
+        font-family: Outfit;
+        font-weight: 500;
+        color: var(--Stone-600);
+        margin-right: 35px;
+        
+        
+    }
+    img{
+        border-radius: 10px;
+        height: 300px;
+        
+        
+    }
+    .nav-1{
+        font-family: Outfit;
+        font-weight: 500;
+        background-color: var(--Rose-50);
+        margin-left: 30px;
+        border-radius: 15px;
+        margin-right: 3%;
+        margin-right: 35px;
+
+    }
+    .nav-h1{
+        padding: 2px;
+        font-family: Outfit;
+        font-weight: 800;
+        font-size: 18px;
+        color: var(--Rose-800);
+        padding-top: 20px;
+        padding-left: 30px;
+        
+    }
+    .nav-cont{
+        background-color: var(--White);
+
+    }
+    .nav-ul{
+        padding-bottom: 20px;
+        padding-left: 55px;
+        
+    }
+
+    .nav-ul li{
+        padding-top: 12px;
+        padding-left: 12px;
+        font-family: Outfit;
+        font-weight: 400;
+        color: var(--Stone-600);
+
+    }
+    .content-1{
+        margin-left: 30px;
+        margin-right: 35px;
+        border-bottom: var(--Stone-150)  solid 2px;
+        padding-bottom: 2%;
+    }
+
+    .content-1 h1{
+        font-family: Young Serif;
+        font-weight: 600;
+        font-size: 28px;
+        color: var(--Brown-800);
+    }
+
+    .content-1 ul{
+        padding-left: 25px;
+        font-family: Outfit;
+        font-weight: 400;
+        color: var(--Stone-600);
+        border-bottom: var(--Stone-150)  solid 2px;
+        padding-bottom: 4%;
+        
+        
+    }
+
+    .content-1 ul li{
+        padding-left: 12px;
+        padding-top: 12px;
+        
+    }
+
+    .content-1 ol{
+        padding-left: 25px;
+        font-family: Outfit;
+        font-weight: 800;
+        color: var(--Brown-800);
+        padding-right: 5%;
+        
+    }
+
+    .content-1 ol li{
+        padding-left: 12px;
+        padding-top: 12px;
+        
+    }
+
+    .content-1 ol li strong{
+        color: var(--Stone-600);
+        
+        
+    }
+
+    .content-1 ol li  span{
+        font-family: Outfit;
+        font-weight: 500;
+        color: var(--Stone-600);
+        
+        
+    }
+
+    .foot-1{
+        
+        margin-left: 30px;
+        border-radius: 15px;
+        margin-right: 3%;
+        margin-bottom: 30px;
+    }
+
+    .foot-1 h1{
+        font-family: Young Serif;
+        font-weight: 600;
+        font-size: 28px;
+        color: var(--Brown-800);
+    }
+
+    .foot-1 p{
+        font-family: Outfit;
+        font-weight: 400;
+        font-size: 16px;
+        color: var(--Stone-600);
+        
+    }
+
+    .foot-1 table {
+        table-layout: fixed;
+        width: 650px;
+        height: 150px;
+        font-family: Outfit;
+        font-weight: 400;
+        font-size: 16px;
+        color: var(--Stone-600);
+        border-spacing: 0;
+        
+        
+    }
+
+    .foot-tr{
+        border-bottom: var(--Stone-150)  solid 1px;
+    
+        
+    }
+
+    .foot-1 table tr td strong{
+        table-layout: fixed;
+        width: 400px;
+        font-family: Outfit;
+        font-weight: 800;
+        font-size: 16px;
+        color: var(--Brown-800);  
+    }
+    .foot-1 table tr td span{
+        padding-left: 7%;
+    }
+    
+   
+}
+@media only screen and (min-width: 1440px){
+    
+    body{
+        background-color: var(--Stone-100);
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            padding-top: 10%;
+            padding-bottom: 10%;
+        
+        
+    }
+
+    .container{
+        text-align: left;
+        border-radius: 10px;
+        background-color:var(--White);
+        margin-left: 23%;
+        
+        margin-right: 23%;
+        
+
+    }
+    .head-1{
+        padding-left: 30px;
+        margin-top: 30px;
+
+    }
+    .head-h1{
+        font-family: Young Serif;
+        font-weight: 800;
+        font-size: 32px;
+        
+    }
+    .head-p{
+        font-family: Outfit;
+        font-weight: 500;
+        color: var(--Stone-600);
+        margin-right: 35px;
+        
+        
+    }
+    img{
+        border-radius: 10px;
+        height: 300px;
+        
+        
+    }
+    .nav-1{
+        font-family: Outfit;
+        font-weight: 500;
+        background-color: var(--Rose-50);
+        margin-left: 30px;
+        border-radius: 15px;
+        margin-right: 3%;
+        margin-right: 35px;
+
+    }
+    .nav-h1{
+        padding: 2px;
+        font-family: Outfit;
+        font-weight: 800;
+        font-size: 18px;
+        color: var(--Rose-800);
+        padding-top: 20px;
+        padding-left: 30px;
+        
+    }
+    .nav-cont{
+        background-color: var(--White);
+
+    }
+    .nav-ul{
+        padding-bottom: 20px;
+        padding-left: 55px;
+        
+    }
+
+    .nav-ul li{
+        padding-top: 12px;
+        padding-left: 12px;
+        font-family: Outfit;
+        font-weight: 400;
+        color: var(--Stone-600);
+
+    }
+    .content-1{
+        margin-left: 30px;
+        margin-right: 35px;
+        border-bottom: var(--Stone-150)  solid 2px;
+        padding-bottom: 2%;
+    }
+
+    .content-1 h1{
+        font-family: Young Serif;
+        font-weight: 600;
+        font-size: 28px;
+        color: var(--Brown-800);
+    }
+
+    .content-1 ul{
+        padding-left: 25px;
+        font-family: Outfit;
+        font-weight: 400;
+        color: var(--Stone-600);
+        border-bottom: var(--Stone-150)  solid 2px;
+        padding-bottom: 4%;
+        
+        
+    }
+
+    .content-1 ul li{
+        padding-left: 12px;
+        padding-top: 12px;
+        
+    }
+
+    .content-1 ol{
+        padding-left: 25px;
+        font-family: Outfit;
+        font-weight: 800;
+        color: var(--Brown-800);
+        padding-right: 5%;
+        
+    }
+
+    .content-1 ol li{
+        padding-left: 12px;
+        padding-top: 12px;
+        
+    }
+
+    .content-1 ol li strong{
+        color: var(--Stone-600);
+        
+        
+    }
+
+    .content-1 ol li  span{
+        font-family: Outfit;
+        font-weight: 500;
+        color: var(--Stone-600);
+        
+        
+    }
+
+    .foot-1{
+        
+        margin-left: 30px;
+        border-radius: 15px;
+        margin-right: 3%;
+        margin-bottom: 30px;
+    }
+
+    .foot-1 h1{
+        font-family: Young Serif;
+        font-weight: 600;
+        font-size: 28px;
+        color: var(--Brown-800);
+    }
+
+    .foot-1 p{
+        font-family: Outfit;
+        font-weight: 400;
+        font-size: 16px;
+        color: var(--Stone-600);
+        
+    }
+
+    .foot-1 table {
+        table-layout: fixed;
+        width: 650px;
+        height: 150px;
+        font-family: Outfit;
+        font-weight: 400;
+        font-size: 16px;
+        color: var(--Stone-600);
+        border-spacing: 0;
+        
+        
+    }
+
+    .foot-tr{
+        border-bottom: var(--Stone-150)  solid 1px;
+    
+        
+    }
+
+    .foot-1 table tr td strong{
+        table-layout: fixed;
+        width: 400px;
+        font-family: Outfit;
+        font-weight: 800;
+        font-size: 16px;
+        color: var(--Brown-800);  
+    }
+    .foot-1 table tr td span{
+        padding-left: 7%;
+    }
+    
+   
+
+}
+@media only screen and (max-width: 375px){
+   
+    body{
+        
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+    }
+
+    .container{
+        text-align: left;
+        background-color:var(--White);
+        margin-right: 20px;
+        
+        
+            
+    }
+   
+    .head-h1{
+        font-family: Young Serif;
+        font-weight: 800;
+        font-size: 32px;
+        padding-left: 10%;
+        
+    }
+    .head-p{
+        font-family: Outfit;
+        font-weight: 500;
+        color: var(--Stone-600);
+        margin-right: 35px;
+        padding-left: 10%;
+        font-size: 12px;
+        
+        
+    }
+    img{
+        height: 130px;
+        width: 375px;
+        
+        
+    }
+    .nav-1{
+        font-family: Outfit;
+        font-weight: 500;
+        background-color: var(--Rose-50);
+        margin-left: 30px;
+        border-radius: 15px;
+        
+
+    }
+    .nav-h1{
+        padding: 2px;
+        font-family: Outfit;
+        font-weight: 800;
+        font-size: 22px;
+        color: var(--Rose-800);
+        padding-top: 20px;
+        padding-left: 30px;
+        
+    }
+    .nav-cont{
+        background-color: var(--White);
+
+    }
+    .nav-ul{
+        padding-bottom: 20px;
+        padding-left: 55px;
+        
+    }
+
+    .nav-ul li{
+        padding-top: 12px;
+        padding-left: 12px;
+        font-family: Outfit;
+        font-weight: 400;
+        color: var(--Stone-600);
+        font-size: 12px;
+
+    }
+    .content-1{
+        margin-left: 30px;
+        border-bottom: var(--Stone-150)  solid 2px;
+        padding-bottom: 2%;
+    }
+
+    .content-1 h1{
+        font-family: Young Serif;
+        font-weight: 600;
+        font-size: 22px;
+        color: var(--Brown-800);
+    }
+
+    .content-1 ul{
+        padding-left: 25px;
+        font-family: Outfit;
+        font-weight: 400;
+        color: var(--Stone-600);
+        border-bottom: var(--Stone-150)  solid 2px;
+        padding-bottom: 4%;
+        
+        
+    }
+
+    .content-1 ul li{
+        padding-left: 12px;
+        padding-top: 12px;
+        font-size: 12px;
+        
+    }
+
+    .content-1 ol{
+        padding-left: 25px;
+        font-family: Outfit;
+        font-weight: 800;
+        color: var(--Brown-800);
+        
+        
+    }
+
+    .content-1 ol li{
+        padding-left: 12px;
+        padding-top: 12px;
+        
+    }
+
+    .content-1 ol li strong{
+        color: var(--Stone-600);
+        font-size: 12px;
+        
+        
+    }
+
+    .content-1 ol li  span{
+        font-family: Outfit;
+        font-weight: 500;
+        color: var(--Stone-600);
+        font-size: 12px;
+        
+        
+    }
+
+    .foot-1{
+        padding-left: 12px;
+        margin-left: 30px;
+        border-radius: 15px;
+        margin-bottom: 30px;
+    }
+
+    .foot-1 h1{
+        font-family: Young Serif;
+        font-weight: 600;
+        font-size: 22px;
+        color: var(--Brown-800);
+    }
+
+    .foot-1 p{
+        font-family: Outfit;
+        font-weight: 400;
+        font-size: 12px;
+        color: var(--Stone-600);
+        
+    }
+
+    .foot-1 table {
+        table-layout: fixed;
+        width:300px;
+        height: 150px;
+        font-family: Outfit;
+        font-weight: 400;
+        font-size: 12px;
+        color: var(--Stone-600);
+        border-spacing: 0;
+        
+        
+    }
+
+    .foot-tr{
+        border-bottom: var(--Stone-150)  solid 1px;
+    
+        
+    }
+
+    .foot-1 table tr td strong{
+        table-layout: fixed;
+        width: 100px;
+        font-family: Outfit;
+        font-weight: 800;
+        font-size: 12px;
+        color: var(--Brown-800);  
+    }
+    .foot-1 table tr td span{
+        padding-left: 7%;
+    }
+    
+   
+}
+
