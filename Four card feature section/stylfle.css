@@ -1,0 +1,170 @@
+:root{
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --VDBlue: hsl(234, 12%, 34%);
+  --GrBlue: hsl(229, 6%, 66%);
+  --VeGray: hsl(0, 0%, 98%);
+}
+
+
+
+body{
+  
+  background-color: var(--VeGray);
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.head-1{
+  justify-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  
+
+}
+
+.head-1 h1{
+  font-family: Poppins;
+  font-weight: 200;
+  color: var(--VDBlue);
+  padding-bottom: 0;
+  margin-bottom: 0;
+  font-size: 26px;
+
+}
+.head-1 h2{
+  font-family: Poppins;
+  font-weight: 600;
+  color: var(--VDBlue);
+  margin-top:0;
+  padding-top: 0;
+  font-size: 26px;
+}
+
+.head-1 p{
+  font-family: Poppins;
+  font-weight: 400;
+  color: var(--GrBlue);
+  font-size: 12px;
+  width: 65vmin;
+  padding-top: 0;
+  margin-top: 0;
+  text-align: center;
+  
+}
+
+.grid h1{
+  font-family: Poppins;
+  font-weight: 600;
+  color: var(--VDBlue);
+  margin-top:0;
+  padding-top: 0;
+  font-size: 16px;
+}
+
+.grid p{
+  font-family: Poppins;
+  font-weight: 400;
+  color: var(--GrBlue);
+  margin-top:0;
+  padding-top: 0;
+  font-size: 12px;
+  margin-right: 12px;
+}
+
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 2fr)) ; 
+  align-items: center;
+  margin-top:2%;
+  gap: 15px;
+  padding-bottom: 5%;
+
+}
+.item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vmin;
+   
+ 
+}
+
+
+
+.card1{
+  background-color: white;
+  border-radius: 5px;
+  border-top: 4px solid var(--Cyan);
+  width: 320px;
+  height: 190px;
+  box-shadow: 0 5px 10px var(--GrBlue) , -5px 0 10px var(--GrBlue);
+  
+  
+  
+}
+.card1conte{
+  margin: 3% 10% 3% 10%;
+  display: flex;
+  flex-direction: column;
+}
+
+.grid img{
+  width: 55px;
+  order: 3;
+  align-self: flex-end;
+  margin-top: 8%;
+}
+.card2{
+  background-color: white;
+  border-radius: 5px;
+  border-top: 4px solid var(--Red);
+  width: 320px;
+  height: 190px;
+  box-shadow: 0 5px 10px var(--GrBlue) , -5px 0 10px var(--GrBlue);
+  
+}
+.card2conte{
+  margin: 3% 10% 3% 10%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card3conte{
+  margin: 3% 10% 3% 10%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card3{
+  background-color: white;
+  border-radius: 5px;
+  border-top: 4px solid var(--Orange);
+  width: 320px;
+  height: 190px;
+  margin-top: 20px;
+  box-shadow: 0 5px 10px var(--GrBlue) , -5px 0 10px var(--GrBlue);
+
+}
+.card4{
+  background-color: white;
+  border-radius: 5px;
+  border-top: 4px solid var(--Blue);
+  width: 320px;
+  height: 190px;
+  box-shadow: 0 5px 10px var(--GrBlue) , -5px 0 10px var(--GrBlue);
+  
+  
+}
+.card4conte{
+  margin: 3% 10% 3% 10%;
+  display: flex;
+  flex-direction: column;
+}
