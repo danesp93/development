@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Young+Serif&display=swap');
+
+:root{
+    /* primary color */
+    --Mviolet: hsl(263, 55%, 52%);
+    --Vkblue: hsl(217, 19%, 35%);
+    --dblue: hsl(219, 29%, 14%);
+    --White: hsl(0, 0%, 100%);
+
+    /* neutral color */
+    --Lightgray: hsl(0, 0%, 81%);
+    --Lighgrayishblue: hsl(210, 46%, 95%);
+}
+
+body{
+    background-color: var(--Lighgrayishblue);
+    
+    margin: 5px;
+    
+}
+
+@media screen and (min-width: 1024px){
+    .cardstes{
+        padding: 30px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)) ; 
+        gap: 30px;
+    }
+    .carddani{
+        grid-column-start:  1;
+        grid-column-end:  3;
+    }
+    .cardjon{
+        grid-column-start:  3;
+    }
+    .cardkira{
+        grid-column-start:  4;
+        grid-row-end: span 2;
+    }
+    .cardjean{
+        grid-column-start:  1;
+        grid-row-start:  2;
+    }
+    .cardpatr{
+        grid-column-start:  span 2;
+        grid-row-start:  2;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .cardstes{
+        padding: 10px;
+        display: grid;
+        grid-template-rows: repeat(auto-fill, minmax(300px, 1fr)) ; 
+        gap: 30px;
+    }
+    
+}    
+.cardstes{
+    margin: 10px;
+    padding-top: 60px;
+    display: grid;
+    gap: 30px;
+}
+
+.carddani{
+    background-color: var(--Mviolet);
+    padding: 30px;
+    border-radius: 8px;
+    background-image: url("images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: 350px 0;
+    background-size: 160px 130px;
+   
+
+}
+.cardjon{
+    background-color: var(--Vkblue);
+    padding: 30px;
+    border-radius: 8px;
+    
+
+}
+
+.cardjean{
+    background-color: var(--White);
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.cardpatr{
+    background-color: var(--dblue);
+    padding: 30px;
+    border-radius: 8px;
+    
+}
+.cardkira{
+    background-color: var(--White);
+    padding: 30px;
+    border-radius: 8px;
+
+}
+
+
+
+.imgdani{
+    border-radius: 35px;
+    border: solid 3px var(--Lightgray);
+    width: 45px;
+    float:left;
+    margin-right: 20px;
+}
+
+.imgkije{
+    border-radius: 35px;
+    width: 45px;
+    float:left;
+    margin-right: 20px;
+}
+.dapajoh3 {
+    color:  var(--White);
+    font-family: Barlow Semi Condensed;
+    font-weight: 500;
+    font-size: 21px;
+    margin: 0;
+    padding: 0;
+}
+
+.verp{
+    color:  var(--Lightgray);
+    font-family: Barlow Semi Condensed;
+    font-weight: 500;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+.dapajoh1 {
+    display: block;
+
+    color:  var(--White);
+    font-family: Barlow Semi Condensed;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.cardjon img{
+    border-radius: 35px;
+    border: solid 3px var(--Lightgray);
+    width: 45px;
+    float:left;
+    margin-right: 20px; 
+}
+
+.cardpatr img{
+    border-radius: 35px;
+    border: solid 3px var(--Mviolet);
+    width: 45px;
+    float:left;
+    margin-right: 20px; 
+
+}
+.dapajoh2 {
+    color:  var(--Lighgrayishblue);
+    font-family: Barlow Semi Condensed;
+    font-weight: 500;
+    font-size: 18px;   
+}
+
+.jakih3{
+    color:  var(--Vkblue);
+    font-family: Barlow Semi Condensed;
+    font-weight: 500;
+    font-size: 21px;
+    margin: 0;
+    padding: 0;
+}
+
+.jakih2{
+    color:  var(--Lightgray);
+    font-family: Barlow Semi Condensed;
+    font-weight: 500;
+    font-size: 18px;   
+}
+
+.jakih1{
+    color:  var(--Vkblue);
+    font-family: Barlow Semi Condensed;
+    font-weight: 600;
+    font-size: 24px;
+}
