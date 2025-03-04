@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kumbh+Sans:wght@100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Young+Serif&display=swap');
+
+:root{
+    --VBlue: hsl(217, 19%, 35%);
+    --DBlue: hsl(214, 17%, 51%);
+    --GBlue: hsl(212, 23%, 69%);
+    --LiBlue: hsl(210, 46%, 95%);
+   /*  Weights: 500, 700 */
+}
+body{
+    background-color: var(--LiBlue);
+    display: grid;
+    grid-template-rows: repeat(auto-fill, minmax(150px, 1fr)) ;
+    grid-template-columns: 1fr 2fr 1fr;
+
+}
+.head-1{
+    padding: 0;
+    margin: 0;
+}
+.sect-1{
+    width: 320px;
+   position: absolute;
+   margin-left: 280px;
+}
+.sect-1 h1{
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--VBlue);
+    
+}
+.sect-1 p{
+    font-family: Manrope;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--DBlue);
+}
+.icon h3{
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--VBlue);
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+    
+
+}
+.icon p{
+    font-family: Manrope;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--DBlue);
+    margin-top: 2px;
+    padding-top: 2px;
+    
+}
+
+.card{
+    background-color: white;
+    border-radius: 10px;
+    grid-row-start: 2;
+    grid-column-start: 2;
+}
+#imgdrw{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 310px;
+    float: left;
+    clip-path: inset(0 18% 0 0);
+    margin: 0;
+    padding: 0;
+}
+.imgicon{
+    float:left;
+    margin-top: 8px;
+    border-radius: 30px;
+    width: 50px;
+    margin-right: 20px;
+    
+    
+}
+.icon{
+    float: left;
+}
+
+.imgshare{
+    margin-top: 20px;
+    float: right;
+    border-radius: 20px;
+    width: 40px;
+    background-color: var(--LiBlue);
+    border: 9px solid var(--LiBlue);
+}
+.share-container {
+    position: relative;
+    text-align: center;
+}
+
+.share-btn {
+    background: #4CAF50;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.share-btn img {
+    width: 30px;
+    height: 30px;
+}
+
+.share-btn:hover {
+    transform: scale(1.1);
+}
+
+.share-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    width: 200px;
+    padding: 10px;
+}
+
+/* .share-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.share-menu ul li {
+    margin: 10px 0;
+}
+
+.share-menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    display: block;
+    padding: 8px;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.share-menu ul li a:hover {
+    background-color: #f1f1f1;
+} */
