@@ -1,0 +1,238 @@
+/* Definir variables globales */
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Stone-100: hsl(30, 54%, 90%);
+    --Stone-150: hsl(30, 18%, 87%);
+    --Stone-600: hsl(30, 10%, 34%);
+    --Stone-900: hsl(24, 5%, 18%);
+    --Brown-800: hsl(14, 45%, 36%);
+    --Rose-800: hsl(332, 51%, 32%);
+    --Rose-50: hsl(330, 100%, 98%);
+    
+    /* Tipografías */
+    --font-primary: 'Outfit', sans-serif;
+    --font-secondary: 'Young Serif', serif;
+
+    /* Tamaños de fuentes */
+    --fs-sm: 12px;
+    --fs-md: 16px;
+    --fs-lg: 18px;
+    --fs-xl: 28px;
+    --fs-xxl: 32px;
+
+    /* Border Radius */
+    --border-radius-sm: 10px;
+    --border-radius-md: 15px;
+}
+
+/* Reset general */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos generales */
+body {
+    background-color: var(--Stone-100);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10%;
+}
+
+/* Contenedor principal */
+.container {
+    text-align: left;
+    background-color: var(--White);
+    border-radius: var(--border-radius-sm);
+    margin: 0 23%;
+}
+
+/* Encabezados */
+.head-1 {
+    padding-left: 30px;
+    margin-top: 30px;
+}
+
+.head-h1 {
+    font-family: var(--font-secondary);
+    font-weight: 800;
+    font-size: var(--fs-xxl);
+}
+
+.head-p {
+    font-family: var(--font-primary);
+    font-weight: 500;
+    color: var(--Stone-600);
+    margin-right: 35px;
+}
+
+/* Imágenes */
+img {
+    border-radius: var(--border-radius-sm);
+    height: 300px;
+}
+
+/* Navegación */
+.nav-1 {
+    font-family: var(--font-primary);
+    font-weight: 500;
+    background-color: var(--Rose-50);
+    margin: 0 35px;
+    border-radius: var(--border-radius-md);
+}
+
+.nav-h1 {
+    padding: 20px 30px 2px;
+    font-family: var(--font-primary);
+    font-weight: 800;
+    font-size: var(--fs-lg);
+    color: var(--Rose-800);
+}
+
+.nav-ul {
+    padding: 0 55px 20px;
+}
+
+.nav-ul li {
+    padding: 12px 12px 0;
+    font-family: var(--font-primary);
+    font-weight: 400;
+    color: var(--Stone-600);
+}
+
+/* Contenido principal */
+.content-1 {
+    margin: 0 35px;
+    border-bottom: 2px solid var(--Stone-150);
+    padding-bottom: 2%;
+}
+
+.content-1 h1 {
+    font-family: var(--font-secondary);
+    font-weight: 600;
+    font-size: var(--fs-xl);
+    color: var(--Brown-800);
+}
+
+.content-1 ul,
+.content-1 ol {
+    padding-left: 25px;
+    font-family: var(--font-primary);
+    font-weight: 400;
+    color: var(--Stone-600);
+    padding-bottom: 4%;
+}
+
+/* Listas */
+.content-1 ul li,
+.content-1 ol li {
+    padding-left: 12px;
+    padding-top: 12px;
+}
+
+.content-1 ol li strong {
+    color: var(--Stone-600);
+}
+
+/* Pie de página */
+.foot-1 {
+    margin: 30px 35px;
+    border-radius: var(--border-radius-md);
+}
+
+.foot-1 h1 {
+    font-family: var(--font-secondary);
+    font-weight: 600;
+    font-size: var(--fs-xl);
+    color: var(--Brown-800);
+}
+
+.foot-1 p {
+    font-family: var(--font-primary);
+    font-weight: 400;
+    font-size: var(--fs-md);
+    color: var(--Stone-600);
+}
+
+/* Tablas */
+.foot-1 table {
+    table-layout: fixed;
+    width: 650px;
+    height: 150px;
+    font-family: var(--font-primary);
+    font-weight: 400;
+    font-size: var(--fs-md);
+    color: var(--Stone-600);
+    border-spacing: 0;
+}
+
+.foot-1 table tr td strong {
+    font-weight: 800;
+    font-size: var(--fs-md);
+    color: var(--Brown-800);
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+    .container {
+        margin: 0 10%;
+    }
+}
+
+@media (max-width: 425px) {
+    body {
+        padding: 5%;
+    }
+
+    .container {
+        margin: 0 20px;
+    }
+
+    .head-h1,
+    .foot-1 h1,
+    .content-1 h1 {
+        font-size: var(--fs-xl);
+        padding-left: 10%;
+    }
+
+    .head-p {
+        font-size: var(--fs-sm);
+        padding-left: 10%;
+    }
+
+    img {
+        height: 130px;
+        width: 100%;
+    }
+
+    .nav-1 {
+        margin: 0 30px;
+    }
+
+    .nav-h1 {
+        font-size: var(--fs-lg);
+    }
+
+    .nav-ul li {
+        font-size: var(--fs-sm);
+    }
+
+    .content-1 ul li,
+    .content-1 ol li strong,
+    .content-1 ol li span,
+    .foot-1 p,
+    .foot-1 table {
+        font-size: var(--fs-sm);
+    }
+
+    .foot-1 table {
+        width: 300px;
+    }
+
+    .foot-1 table tr td strong {
+        width: 100px;
+    }
+}
