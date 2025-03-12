@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kumbh+Sans:wght@100..900&family=Lexend+Deca:wght@100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Young+Serif&display=swap');
+:root{  
+
+    /*Primary*/
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+
+    /*neutral*/
+    --Very-dark-blue1 : hsl(217, 54%, 11%); /*(main BG)*/
+    --Very-dark-blue2 : hsl(216, 50%, 16%); /*(card BG)*/
+    --Very-dark-blue3 : hsl(215, 32%, 27%); /*(line) - Font size (paragraph): 18px - Weights: 300, 400, 600*/
+    --White: hsl(0, 0%, 100%);
+}
+
+body{
+    background-color: var(--Very-dark-blue1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.itemCard{
+    background-color: var(--Very-dark-blue2);
+    border-radius: 2%;
+    width: 333px;
+}
+.columCard{
+    padding: 5%;
+}
+.imag{
+    width: 300px;
+    height: 300px;
+    border-radius: 3%;
+}
+
+.secEthe, .secClock {
+    display: flex;
+    align-items: center; /* Vertically centers the image and text */
+}
+
+.secEthe img, .secClock img {
+    margin-right: 5px; /* Adds space between the image and the text */
+}
+.section-1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.columCard h1, .columCard span, .secClock h5, .secEthe h5, .footer-1 p, .footer-1 span{
+    font-family: Outfit;
+}
+
+.columCard h1{
+    color: var(--White);
+    font-weight: 600;
+    font-size: 22px;
+}
+.secEthe h5{
+    color: var(--Cyan);
+    font-weight: 400;
+}
+
+.secClock h5{
+    color: var(--Soft-blue);
+    font-weight: 400;
+}
+.columCard span{
+    color: var(--Soft-blue);
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.line{
+    border: solid 1px var(--Very-dark-blue3);
+    
+}
+.ava{
+    width: 30px;
+    height: 30px;
+    border: solid 1px var(--White);
+    border-radius: 15px;
+    margin-right: 15px;
+}
+.footer-1{
+    display: flex;
+    align-items: center;
+    margin-top: 7px;
+    
+}
+
+.footer-1 p{
+    color: var(--Soft-blue);
+    font-size: 14px;
+}
+.footer-1 span{
+    color: var(--White);
+    margin-left: 9px;
+    font-size: 14px;
+}
+
+.columCard h1:hover, .footer-1 span:hover{
+    color: var(--Cyan);
+}
+.imag:hover{
+    background-color: var(--Cyan);
+    
+}
+.image-container {
+    position: relative;
+    display: inline-block;
+  }
+.iconVi{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px; 
+    opacity: 0;
+    transition: opacity 0.3s ease
+}
+
+
+  
+.image-container:hover .iconVi {
+    opacity: 1; 
+}
+
+.image-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 99%;
+    border-radius: 3%;
+    background-color: rgba(0, 255, 255, 0.5); /* Color cian con opacidad */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none; /* Asegura que el overlay no interfiera con los clics */
+  }
+
+  .image-container:hover::after {
+    opacity: 1; /* Muestra la superposición cian */
+  }
+
