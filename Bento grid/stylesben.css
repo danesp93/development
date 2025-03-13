@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kumbh+Sans:wght@100..900&family=Lexend+Deca:wght@100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Young+Serif&display=swap');
+:root{
+    /*color */
+    --Purple-100: hsl(254, 88%, 90%);
+    --Purple-500: hsl(256, 67%, 59%);
+
+    --Yellow-100: hsl(31, 66%, 93%);
+    --Yellow-500: hsl(39, 100%, 71%);
+
+    --White: hsl(0, 0%, 100%);
+    --Black: hsl(0, 0%, 7%);
+    
+}
+
+body{
+    background-color: #f5f6f5;
+    margin: 5px;
+}
+
+.tarjetas{
+    margin: 10px;
+    padding-top: 60px;
+    display: grid;
+    gap: 30px;
+}
+
+
+
+.imgPost{
+    width: 150px;
+}
+
+.h2c, .h2q{
+    font-size: 32px;
+    font-weight: 400;
+}
+.h2c{
+    line-height: 30px;
+}
+.h2q{
+    margin-top: -35px;
+    color: var(--Purple-500);
+}
+
+.cardChat h3{
+    color: var(--Black);
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 39px;
+}
+
+.cardStar{
+    background-color: var(--Purple-500);
+    padding: 30px;
+    border-radius: 8px;
+    background-position: 300px 0px;
+    background-size: 100px 100px;
+    justify-items: center;
+    
+}
+.h1Star, .h1Ia, .cardStar h5{
+    color: var(--White);
+}
+.cardStar h5{
+    margin-top: -1px;
+    font-weight: 300;
+}
+.h1Star{
+    display: flex;
+    font-weight: 400;
+    font-size: 48px;
+}
+.h1Star span{
+    margin-left: 8px;
+    color: var(--Yellow-500);
+}
+.h1Ia{
+    margin-top: -55px;
+    font-weight: 400;
+    font-size: 48px;
+    margin-bottom: 0px;
+}
+.cardSocial{
+    background-color: var(--White);
+    padding: 30px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.cardSocial h5{
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 39px;
+    margin-top: 40px;
+    height: 90px;
+}
+
+.cardAudi{
+    background-color: var(--White);
+    padding: 30px;
+    border-radius: 8px;
+}
+.imgAudi{
+    width: 200px;
+}
+
+.cardAudi h3{
+    font-size: 70px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+.cardAudi p{
+    margin-top: -60px;
+}
+
+.cardCalen{
+    background-color: var(--Yellow-500);
+    padding: 30px;
+    border-radius: 8px;
+    height: 240px;
+    overflow: hidden;
+}
+
+.cardCalen h3{
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 39px;
+    margin-top: -5px;
+    
+}
+
+.cardFollowers{
+    background-color: var(--Purple-500);
+    padding: 30px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+.imgFollow{
+    width: 240px;
+}
+.cardFollowers h2{
+    color: var(--White);
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 39px;
+}
+.cardMedia{
+    background-color: var(--Purple-100);
+    padding: 30px;
+    border-radius: 8px;
+    background-position: 300px 0px;
+    background-size: 100px 100px;
+    overflow: hidden;
+}
+.cardMedia h2{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.cardMedia p{
+    font-size: 21px;
+}
+.imgSocial{
+    width: 360px;
+    margin-bottom: -30px;
+}
+.imgChad{
+    width: 250px;
+}
+.imgMedia{
+    width: 430px;
+}
+
+.imgStar{
+    margin-top: 10px;
+    width: 150px;
+}
+.imgCalen{
+    width: 250px;
+    margin-top: -25px;
+}
+.h2c, .h2q, .cardChat h3, .cardStar h1, .cardStar h5, .cardSocial h5, .cardAudi h3, .cardAudi p,
+.cardCalen h3, .cardFollowers h2, .cardMedia h2, .cardMedia p{
+    font-family: DM Sans;
+}
+
+@media screen and (min-width: 1024px){
+    .tarjetas{
+        padding: 30px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)) ; 
+    }
+    .cardPost{
+        grid-row: span 3 / span 3;
+    }
+    .cardChat{
+        grid-row: span 3 / span 3;
+        grid-column-start: 1;
+        grid-row-start: 4;
+    }
+    .cardStar{
+        grid-column: span 2 / span 2;
+        grid-row: span 2 / span 2;
+        grid-column-start: 2;
+        grid-row-start: 1;
+    }
+    .cardSocial{
+        grid-row: span 2 / span 2;
+        grid-column-start: 2;
+        grid-row-start: 3;
+    }
+    .cardAudi{
+        grid-row: span 2 / span 2;
+        grid-column-start: 2;
+        grid-row-start: 5;
+    }
+    .cardCalen{
+        grid-row: span 2 / span 2;
+        grid-column-start: 3;
+        grid-row-start: 3;
+    }
+    .cardFollowers{
+        grid-column: span 2 / span 2;
+        grid-row: span 2 / span 2;
+        grid-column-start: 3;
+        grid-row-start: 5;
+    }
+    .cardMedia{
+        grid-row: span 4 / span 4;
+        grid-column-start: 4;
+        grid-row-start: 1;
+    }
+    .cardPost{
+        background-color: var(--Yellow-100);
+        padding: 30px;
+        border-radius: 8px;
+        height: 380px;
+    }
+    .cardChat{
+        background-color: var(--Yellow-500);
+        padding: 30px;
+        border-radius: 8px;
+        margin-top: -80px;
+    }
+
+}
+@media screen and (max-width: 425px){
+    .tarjetas{
+        padding: 4px;
+        display: grid;
+        grid-template-rows: repeat(auto-fill, minmax(150px, 1fr)) ; 
+        gap: 30px;
+    }
+    .cardPost{
+        background-color: var(--Yellow-100);
+        padding: 30px;
+        border-radius: 8px;
+        
+    }
+    .cardChat{
+        background-color: var(--Yellow-500);
+        padding: 30px;
+        border-radius: 8px;
+        
+    }
+
+
+    
+}   
