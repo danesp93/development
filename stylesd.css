@@ -112,6 +112,7 @@ body{
     }
     .bto-10, .bto-11{
         border-bottom-style: dashed;
+        border-bottom-width: 1px;
     }
 }
 
