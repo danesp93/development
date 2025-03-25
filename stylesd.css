@@ -55,7 +55,7 @@ body{
 }
 .bto-1, .bto-2, .bto-3{
     grid-row-start: 3;
-    border-bottom-style: dashed;
+    border-bottom: 1px dashed;
     padding: 10px;
     display: flex;
     justify-content: center;
@@ -63,7 +63,7 @@ body{
 
 .bto-4, .bto-5, .bto-6{
     grid-row-start: 4;
-    border-bottom-style: dashed;
+    border-bottom: 1px dashed;
     padding: 10px;
     display: flex;
     justify-content: center;
@@ -74,7 +74,7 @@ body{
     padding: 10px;
     display: flex;
     justify-content: center;
-    border-bottom-style: dashed;
+    border-bottom: 1px dashed;
 }
 
 .bto-10, .bto-11, .bto-12{
@@ -101,6 +101,7 @@ body{
     }
     .bto-1, .bto-2, .bto-4, .bto-5, .bto-7, .bto-8, .bto-10, .bto-11{
         border-right-style: dashed;
+        border-right-width: 1px;
     }
 }
 @media screen and (max-width: 425px){
