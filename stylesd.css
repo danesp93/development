@@ -107,7 +107,7 @@ body{
 @media screen and (max-width: 425px){
     .Pagina{
         margin: 10px;
-        border: solid 1px var(--Grey-700);
+        border: solid 2px var(--Grey-700);
         border-radius: 5px;
     }
     .bto-10, .bto-11{
