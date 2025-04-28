@@ -82,6 +82,15 @@ body{
     padding: 10px;
     display: flex;
     justify-content: center;
+    border-bottom: 1px dashed;
+}
+
+.bto-13{
+    grid-row-start: 7;
+    grid-column-start: 2;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
 }
 .pagiFooter{
     grid-column: span 3 / span 3;
@@ -99,7 +108,11 @@ body{
         grid-template-columns: repeat(auto-fill, minmax(2, 1fr)) ; 
         gap: 0px;
     }
-    .bto-1, .bto-2, .bto-4, .bto-5, .bto-7, .bto-8, .bto-10, .bto-11{
+    .bto-13{
+        border-left-style: dashed;
+        border-left-width: 1px;
+    }
+    .bto-1, .bto-2, .bto-4, .bto-5, .bto-7, .bto-8, .bto-10, .bto-11, .bto-13{
         border-right-style: dashed;
         border-right-width: 1px;
     }
