@@ -1,34 +1,21 @@
-
-document.querySelector(".imgshare").addEventListener("click", function () {
-  alert('Se ha dado clic al botón!');
-});
-
-document.getElementById('shareBtn').addEventListener('click', function() {
+/*document.querySelector(".imgshare").addEventListener('click', function() {
   const menu = document.getElementById('shareMenu');
-  // Alternar la visibilidad del menú
-  menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+
+  menu.style.visibility = menu.style.visibility === 'visible' ? 'hidden' : 'visible';
+
+  let colorElement = document.querySelector(".imgshare");
+  colorElement.style.backgroundColor = colorElement.style.backgroundColor === "var(--DBlue)" ? "var(--LiBlue)" : "var(--DBlue)";
+
+  let filterImg = document.querySelector(".imgshare img");
+  filterImg.style.filter = filterImg.style.filter === "grayscale(1) brightness(2)" ? "none" : "grayscale(1) brightness(2)";
+  
+});*/
+
+document.querySelector(".imgshare").addEventListener('click', function() {
+  const menu = document.getElementById('shareMenu');
+  const img = this.querySelector("img");
+
+  menu.classList.toggle('visible');
+  this.classList.toggle('active');
+  img.classList.toggle('filtered');
 });
-
-const shareLinks = {
-  twitter: "https://twitter.com/share?url={url}&text={text}",
-  facebook: "https://www.facebook.com/sharer/sharer.php?u={url}",
-  linkedin: "https://www.linkedin.com/sharing/share-offsite/?url={url}",
-  whatsapp: "https://wa.me/?text={url}"
-};
-
-/* const currentUrl = encodeURIComponent(window.location.href); // URL de la página actual
-const shareText = encodeURIComponent("¡Mira este contenido interesante!");
-
-document.querySelectorAll('.share-option').forEach(option => {
-  option.addEventListener('click', function(event) {
-      event.preventDefault();
-      const network = event.target.getAttribute('data-network');
-      const shareUrl = shareLinks[network].replace('{url}', currentUrl).replace('{text}', shareText);
-      
-      // Abrir la ventana emergente para compartir
-      window.open(shareUrl, '_blank', 'width=600,height=400');
-      
-      // Ocultar el menú después de compartir
-      document.getElementById('shareMenu').style.display = 'none';
-  });
-}); */

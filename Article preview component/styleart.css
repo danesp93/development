@@ -9,32 +9,169 @@
 }
 body{
     background-color: var(--LiBlue);
-    display: grid;
-    grid-template-rows: repeat(auto-fill, minmax(150px, 1fr)) ;
-    grid-template-columns: 1fr 2fr 1fr;
+}
+
+@media screen and (min-width: 1024px){
+    .imgdrw{
+        clip-path: inset(0 19% 0 0); 
+        border-radius: 10px 0px 0px 10px;
+        width: 335px; 
+    }
+    .head-1{
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    .card{
+        margin-left: 24%;
+        margin-top: 13%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(230px, 2fr)) ; 
+        gap: 0;
+    }
+    .sect-1{
+        width: 320px;
+        height: 253px;
+        border-radius: 0px 10px 10px 0px;
+        padding: 16px 44px 0px 44px;
+    }
+    .share-menu:after {
+        content: "";
+        position: absolute;
+       top: 85%;
+       left: 90px;
+       border-top: 20px solid var(--VBlue);
+       border-left: 20px solid transparent;
+       border-right: 20px solid transparent;
+    }
+    .share-menu{
+        top: -60px;
+        left: 50%;
+        width: 200px;
+        border-radius: 8px;   
+        visibility: hidden;
+        position: absolute;
+        z-index: 5
+    }
+    .share-container p{
+        margin-left: 15px;
+    }
+    .imgshare{
+        margin-top: 20px;
+    }
+    .imgicon{
+        margin-top: 8px;
+    }
+
+
+    .share-menu img{
+        margin:0 4px;
+        margin-top: 10px;
+        
+    }
+    .share-container{
+        margin-left: 15px;
+    }
+}
+
+
+@media screen and (max-width: 425px){
+    .imgdrw{
+        clip-path: inset(0 0 17% 0); 
+        border-radius: 10px 10px 0px 0px;
+        width: 325px; 
+    }
+    .head-1{
+        border-radius: 10px 10px 0px 0px;
+    }
+    .card{
+        margin-left: 5%;
+        margin-top: 5%;
+        display: grid;
+        grid-template-rows: repeat(auto-fill, minmax(215px, 2fr)) ; 
+        gap: 0;
+        height: 20px;
+        width: 70px;
+    }
+    .sect-1{
+        border-radius: 0px 0px 10px 10px;
+        padding: 25px 25px 6px 25px;
+    }
+    .share-menu{
+        border-radius: 0px 0px 10px 10px;
+        width: 316px;
+        height: 58px;
+        top: 10px;
+        left: -47%;
+        display: flex;
+        align-items: center;
+        visibility: hidden;
+    }
+    .icon{
+        margin-top: 7px;
+    }
+    .imgshare{
+        margin-top: 24px;
+        z-index: 10;
+        position: relative;
+        
+    }
+    .imgicon{
+        margin-top: 10px;
+    }
+    .share-menu img{
+        margin:0 9px;
+    }
+    .share-container p{
+        margin-right: 6px;
+        margin-left: 20px;
+    }
+    
 
 }
+
+
+.imgshare.active {
+    background-color: var(--DBlue); 
+}
+
+.imgshare img.filtered {
+    filter: grayscale(1) brightness(2);
+}
+
+
+.card{
+    border-radius: 10px;
+}
+
+
+.imgdrw{
+    height: auto;
+    float: left;  
+}
+
+
 .head-1{
-    padding: 0;
-    margin: 0;
+    float: left;
 }
 .sect-1{
-    width: 320px;
-   position: absolute;
-   margin-left: 280px;
+    background-color: white;
+    
+    margin: 0;
+   
 }
 .sect-1 h1{
     font-family: Manrope;
     font-size: 18px;
     font-weight: 700;
     color: var(--VBlue);
-    
+    line-height: 1.4;
 }
 .sect-1 p{
     font-family: Manrope;
     font-size: 12px;
     font-weight: 500;
     color: var(--DBlue);
+    line-height: 1.4;
 }
 .icon h3{
     font-family: Manrope;
@@ -44,8 +181,6 @@ body{
     margin-bottom: 0;
     padding-bottom: 0;
     padding-top: 0;
-    
-
 }
 .icon p{
     font-family: Manrope;
@@ -53,103 +188,61 @@ body{
     font-weight: 500;
     color: var(--DBlue);
     margin-top: 2px;
-    padding-top: 2px;
-    
+    padding-top: 2px; 
 }
 
-.card{
-    background-color: white;
-    border-radius: 10px;
-    grid-row-start: 2;
-    grid-column-start: 2;
-}
-#imgdrw{
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    width: 310px;
-    float: left;
-    clip-path: inset(0 18% 0 0);
-    margin: 0;
-    padding: 0;
-}
 .imgicon{
     float:left;
-    margin-top: 8px;
+    
     border-radius: 30px;
     width: 50px;
     margin-right: 20px;
-    
-    
 }
 .icon{
     float: left;
 }
 
 .imgshare{
-    margin-top: 20px;
+    
     float: right;
-    border-radius: 20px;
-    width: 40px;
+    border-radius: 25px;
     background-color: var(--LiBlue);
-    border: 9px solid var(--LiBlue);
-}
-.share-container {
-    position: relative;
-    text-align: center;
+    border: 1px solid var(--LiBlue);
+    padding: 8px;
 }
 
-.share-btn {
-    background: #4CAF50;
-    border: none;
-    padding: 15px;
-    cursor: pointer;
-    border-radius: 50%;
-    transition: transform 0.3s ease;
+
+.share-container p{
+    color: var(--LiBlue);
+    font-family: Manrope;
+    font-size: 13px;
+    letter-spacing: 6px;
+    float: left;
+    
+    
+    
 }
 
-.share-btn img {
-    width: 30px;
-    height: 30px;
-}
-
-.share-btn:hover {
-    transform: scale(1.1);
+.share-menu.visible {
+    visibility: visible;
 }
 
 .share-menu {
-    display: none;
+    
     position: absolute;
-    top: 60px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    z-index: 100;
-    width: 200px;
-    padding: 10px;
+    background: var(--VBlue);
+    padding: 5px;
 }
 
-/* .share-menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+
+.share-container {
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    
 }
 
-.share-menu ul li {
-    margin: 10px 0;
-}
 
-.share-menu ul li a {
-    text-decoration: none;
-    color: #333;
-    font-size: 16px;
-    display: block;
-    padding: 8px;
-    border-radius: 4px;
-    transition: background 0.3s;
-}
+ 
 
-.share-menu ul li a:hover {
-    background-color: #f1f1f1;
-} */
